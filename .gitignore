@@ -1,0 +1,14 @@
+# Session cookies — contains your browser session, never commit
+delta_curl.txt
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Debug output — local only
+debug_output/
+
+# macOS
+.DS_Store
