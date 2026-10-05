@@ -39,8 +39,10 @@ pbpaste > delta_curl.txt     # Mac
 
 ```bash
 source .venv/bin/activate
-python scraper.py
+.venv/bin/python scraper.py
 ```
+
+> If your shell has `python` aliased to a system interpreter (check with `alias python` or `type python`), plain `python scraper.py` will silently skip the venv and fail with `ModuleNotFoundError`. Calling `.venv/bin/python` directly always uses the right interpreter regardless of aliases.
 
 You will be prompted for:
 
